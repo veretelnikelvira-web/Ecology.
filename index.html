@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Екологічна свідомість школярів — Роздільне сортування</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>Екологічна свідомість школярів</h1>
+    <p>Роздільне сортування сміття — просто, важливо і корисно для України</p>
+  </header>
+
+  <main>
+    <!-- Вступ -->
+    <section class="intro" aria-labelledby="intro-title">
+      <img src="https://source.unsplash.com/featured/?recycling,ukraine" alt="Сортування сміття" />
+      <div class="text">
+        <h2 id="intro-title">Привіт! Я — учень 8 класу</h2>
+        <p>Цей сайт створений, щоб показати, як просто почати сортувати сміття в школі та вдома. Тут є правила роздільного сортування, корисні посилання і картинки для плакатів.</p>
+      </div>
+    </section>
+
+    <!-- Контейнери -->
+    <section class="grid" aria-label="Контейнери для сортування">
+      <article class="card">
+        <img src="https://source.unsplash.com/collection/928423/90x90?paper" alt="Папір" />
+        <h3>Папір</h3>
+        <p>Картон, газети, чистий папір — їх складаємо у контейнер для паперу.</p>
+      </article>
+
+      <article class="card">
+        <img src="https://source.unsplash.com/featured/?plastic-bottle,blue" alt="Пластик" />
+        <h3>Пластик</h3>
+        <p>Пляшки і пластикові контейнери — обполоснути і відправити у жовтий контейнер.</p>
+      </article>
+
+      <article class="card">
+        <img src="https://source.unsplash.com/featured/?glass-bottle" alt="Скло" />
+        <h3>Скло</h3>
+        <p>Скляні пляшки і банки — без кришок, небиті — у скляний контейнер.</p>
+      </article>
+
+      <article class="card">
+        <img src="https://source.unsplash.com/featured/?compost,biowaste" alt="Органіка" />
+        <h3>Органіка</h3>
+        <p>Відходи з кухні, овочеві очистки — у компост або контейнер для органіки.</p>
+      </article>
+    </section>
+
+    <!-- Як почати -->
+    <section class="howto">
+      <div class="steps">
+        <h3>Як почати сортувати — прості кроки</h3>
+        <ol>
+          <li>Підготуй коробки або контейнери для паперу, пластику, скла, органіки.</li>
+          <li>Перед викиданням ополосни пластикові та скляні упаковки.</li>
+          <li>Не клади брудний папір або змазаний жиром.</li>
+          <li>Дізнайся, куди у твоєму місті забирають вторсировину.</li>
+          <li>Розкажи друзям — навчати інших легко!</li>
+        </ol>
+      </div>
+
+      <aside class="links">
+        <h3>Корисні посилання</h3>
+        <p><a href="https://uk.wikipedia.org/wiki/Сортування_сміття" target="_blank">Вікіпедія — Сортування сміття</a></p>
+        <p><a href="https://www.unep.org/" target="_blank">UNEP — екологічні ресурси</a></p>
+        <p><a href="https://www.greenschool.org/" target="_blank">Шкільні еко-програми</a></p>
+        <p><a href="https://source.unsplash.com/" target="_blank">Фото для плакатів</a></p>
+      </aside>
+    </section>
+
+    <!-- Заклик до дії -->
+    <section class="join">
+      <div class="image">
+        <img src="https://source.unsplash.com/featured/?school,ecology" alt="Шкільна екологія" />
+      </div>
+      <div class="text">
+        <h3>Приєднуйся до нас!</h3>
+        <p>Запропонуй у класі збирати вторсировину. Створи плакат і поклич друзів — разом зробимо школу чистішою.</p>
+        <p><strong>Порада:</strong> почни з одного контейнера — наприклад, для пластику — і поступово додай інші.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Сайт створено учнем 8 класу НУШ — роздільне сортування в Україні</p>
+  </footer>
+
+  <button class="top-btn" id="topBtn" title="Вгору">▲</button>
+
+  <script>
+    const topBtn = document.getElementById('topBtn');
+    window.addEventListener('scroll', () => {
+      if(window.scrollY > 250) topBtn.style.display = 'block';
+      else topBtn.style.display = 'none';
+    });
+    topBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+
+</body>
+</html>
